@@ -11,7 +11,7 @@
                 <img src="{{ SITEURL }}/extra/{% if article.img %}{{ article.img }}{% else %}{{ DEFAULT_PROJECT_IMG }}{% endif %}"
                      class="d-block w-100" alt="{{ article.title }}">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2>{{ article.title }}</h2>
+                    <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
                 </div>
             </div>
 
