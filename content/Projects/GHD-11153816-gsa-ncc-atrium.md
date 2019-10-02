@@ -1,6 +1,7 @@
 Title: GSA SSA National Computing Center Atrium
 Date: 2018-03-29
 tags: 
+Featured: True
 
 Fire Protection Engineer
 National Computing Center Atrium Exhaust

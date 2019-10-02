@@ -1,0 +1,32 @@
+{% set carousel_vars = {'active': True} %}
+
+<div class="featured">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+            {% for article in articles | selectattr('category', '==', 'projects') %}
+            {% if article.featured %}
+
+            <div class="carousel-item{% if carousel_vars.active %} active{% endif %}">
+                <img src="{{ SITEURL }}/extra/{% if article.img %}{{ article.img }}{% else %}{{ DEFAULT_PROJECT_IMG }}{% endif %}"
+                     class="d-block w-100" alt="{{ article.title }}">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>{{ article.title }}</h2>
+                </div>
+            </div>
+
+            {% if carousel_vars.update({'active': False}) %} {% endif %}
+            {% endif %}
+            {% endfor %}
+
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
