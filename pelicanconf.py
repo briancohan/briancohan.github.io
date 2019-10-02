@@ -44,11 +44,11 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
-    ('LinkedIn', 'https://www.linkedin.com/in/briandcohan/'),
-    ('Twitter', 'https://twitter.com/BrianDCohan'),
-    ('StackOverflow', 'https://stackoverflow.com/users/3447515/brian-cohan'),
-    ('Github', 'https://github.com/briancohan'),
-    # ('Kaggle', 'https://www.kaggle.com/briancohan'),
+    ('fab fa-linkedin-in', 'https://www.linkedin.com/in/briandcohan/'),
+    ('fab fa-twitter', 'https://twitter.com/BrianDCohan'),
+    ('fab fa-stack-overflow', 'https://stackoverflow.com/users/3447515/brian-cohan'),
+    ('fab fa-github', 'https://github.com/briancohan'),
+    # ('fab fa-kaggle', 'https://www.kaggle.com/briancohan'),
 )
 
 DEFAULT_PAGINATION = 10
