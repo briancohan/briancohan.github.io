@@ -1,0 +1,12 @@
+<div class="row">
+    {% for title, id, url in LICENSES %}
+    <div class="col-sm">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ title }}</h5>
+                <h6 class="card-subtitle"><a href="{{ url }}" target="_blank">{{ id }}</a></h6>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,13 @@
+<div class="row">
+    {% for school, degree, grad in EDUCATION %}
+    <div class="col-sm">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ degree }}</h5>
+                <h6 class="card-subtitle">{{ school }}</h6>
+                <p>{{ grad }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

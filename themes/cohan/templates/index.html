@@ -19,22 +19,14 @@
 
 <div class="container">
 
-    {% if EDUCATION %}
-    <h1 class="text-primary">Education</h1>
-    <div class="row">
-        {% for school, degree, grad in EDUCATION %}
-        <div class="col-sm">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">{{ degree }}</h5>
-                    <h6 class="card-subtitle">{{ school }}</h6>
-                    {{ grad }}
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-    {% endif %}
+    <h1 class="text-primary mt-5">Licenses</h1>
+    {% include 'license.html' %}
+
+    <h1 class="text-primary mt-5">Education</h1>
+    {% include 'education.html' %}
+
+    <h1 class="text-primary mt-5">Memberships</h1>
+    {% include 'membership.html' %}
 
 </div>
 {% endblock content %}

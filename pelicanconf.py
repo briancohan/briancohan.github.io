@@ -56,12 +56,12 @@ EDUCATION = (
 )
 
 LICENSES = (
-    ('PE', 'VA - 0402055056'),
+    ('Professional Engineer', 'VA - 0402055056', 'http://www.dpor.virginia.gov/LicenseLookup/'),
 )
 
 MEMBERSHIPS = (
-    ('SFPE', 'National', 'PMSFPE', 2006),
-    ('SFPE', 'Central VA', 'Member at Large', 2016),
+    ('SFPE', 'National', 'https://www.sfpe.org/', 'PMSFPE', 2006),
+    ('SFPE', 'Central Virginia', 'http://sfpecentralva.org/', 'Member at Large', 2016),
 )
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 12
