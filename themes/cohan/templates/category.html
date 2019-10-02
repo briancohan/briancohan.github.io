@@ -5,15 +5,15 @@
 {% block content %}
 <div class="container mt-5">
     <h1>{{ category }}</h1>
-
-    {% for article in articles_page.object_list %}
-    {% if category == 'projects' %}
-    {% include 'project.html' %}
-    {% elif category == 'work history' %}
-    {% include 'work.html' %}
-    {% endif %}
-    {% endfor %}
-
+    <div class="row">
+        {% for article in articles_page.object_list %}
+        {% if category == 'projects' %}
+        {% include 'project.html' %}
+        {% elif category == 'work history' %}
+        {% include 'work.html' %}
+        {% endif %}
+        {% endfor %}
+    </div>
     {% if articles_page.has_other_pages() %}
     {% include 'pagination.html' %}
     {% endif %}

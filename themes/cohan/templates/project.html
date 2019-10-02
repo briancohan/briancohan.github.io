@@ -1,14 +1,16 @@
-<article class="hentry">
-    <header><h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-                                       title="Permalink to {{ article.title|striptags }}">{{ article.title
-        }}</a></h2></header>
-    <footer class="post-info">
-        <time class="published" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }}</time>
-        <address class="vcard author">By
-            {% for author in article.authors %}
-            <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+<div class="col-md-3 mt-3">
+    <div class="card{% if article.featured %} border-primary{% endif %}">
+        <img src="{{ SITEURL }}/extra/{% if article.img %}{{ article.img }}{% else %}{{ DEFAULT_PROJECT_IMG }}{% endif %}" class="card-img-top" alt="{{ article.title }}">
+        <div class="card-body">
+            <header>
+                <h4><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h4>
+            </header>
+            {{ article.summary }}
+        </div>
+        <div class="card-footer">
+            {% for tag in article.tags|sort %}
+            <a href="{{ SITEURL }}/{{ tag.url }}"><span class="badge badge-secondary">{{ tag }}</span></a>
             {% endfor %}
-        </address>
-    </footer><!-- /.post-info -->
-    <div class="entry-content"> {{ article.summary }}</div><!-- /.entry-content -->
-</article>
+        </div>
+    </div>
+</div>
