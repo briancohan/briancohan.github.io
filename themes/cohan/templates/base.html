@@ -5,18 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/united/bootstrap.min.css">
-    <style>
-        html, body {height: 100%;}
-        body {display: flex;flex-direction: column;}
-        .content {flex: 1 0 auto;}
-        .footer {flex-shrink: 0;}
-        .work img{width: 64px;}
-        .jumbotron{
-            background: url("{{ SITEURL }}/extra/{{ JUMBOTRON_IMAGE }}") no-repeat center center;
-            background-size: cover;
-            background-blend-mode: lighten;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}">
 
     <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
 
@@ -27,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="{{ SITEURL }}/">
-            <img src="{{ SITEURL }}/extra/{{ NAVBAR_IMG }}" alt="logo" width="30" height="30" class="d-inline-block align-top"/>
+            <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/{{ NAVBAR_IMG }}" alt="logo" width="30" height="30" class="d-inline-block align-top"/>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

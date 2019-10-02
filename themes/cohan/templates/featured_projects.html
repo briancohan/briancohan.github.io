@@ -8,7 +8,7 @@
             {% if article.featured %}
 
             <div class="carousel-item{% if carousel_vars.active %} active{% endif %}">
-                <img src="{{ SITEURL }}/extra/{% if article.img %}{{ article.img }}{% else %}{{ DEFAULT_PROJECT_IMG }}{% endif %}"
+                <img src="{{ SITEURL }}/images/projects/{% if article.img %}{{ article.img }}{% else %}{{ DEFAULT_PROJECT_IMG }}{% endif %}"
                      class="d-block w-100" alt="{{ article.title }}">
                 <div class="carousel-caption d-none d-md-block">
                     <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
