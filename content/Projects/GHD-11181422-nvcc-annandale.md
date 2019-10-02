@@ -4,6 +4,6 @@ Role: Fire Protection Engineer
 Client: Northern VA Community College
 City: Annandale, VA
 Tags: Fire Alarm, University
-img: 
+img: IMG_5577.JPG
 
 Fire Protection Engineer responsible for providing the design and specifications for fire alarm modifications. Drop ceilings were installed in several classrooms which removed beam pockets and resulted in the removal of many smoke detectors.
