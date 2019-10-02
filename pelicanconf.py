@@ -7,6 +7,7 @@ SITENAME = 'Brian Cohan'
 SITEURL = ''
 JUMBOTRON_IMAGE = 'jens-johnsson-qFYBki6u3Ik-unsplash.jpg'
 DEFAULT_PROJECT_IMG = 'paul-bulai-XOQJa4OC8P0-unsplash.jpg'
+NAVBAR_IMG = 'navbar.png'
 
 PATH = 'content'
 
