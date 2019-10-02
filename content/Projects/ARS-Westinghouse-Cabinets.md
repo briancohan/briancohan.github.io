@@ -1,7 +1,8 @@
-Title: Westinghouse Cabinets
+Title: Westinghouse - Cabinet Fire Propagation 
 Date: 2011-01-01
-tags: 
+Role: Fire Protection Engineer
+Client: Westinghouse Electric Company
+Tags: FDS, Nuclear
+img: mika-baumeister-TtsRECywMmc-unsplash.jpg
 
-Electrical Cabinet Fire Propagation Analysis
-Westinghouse Electric Company
 Fire Protection Engineer responsible for evaluating fire spread between suited electrical cabinets. Fire Dynamics Simulator was used to evaluate temperatures inside a cabinet due to a fire inside an adjacent cabinet.
