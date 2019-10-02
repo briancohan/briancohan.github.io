@@ -1,0 +1,13 @@
+<article class="work my-5">
+    <div class="media">
+        <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/{{ article.image }}" class="mr-3" alt="{{ article.title }}">
+        <div class="media-body">
+            <h1 class="mt-0 text-primary">{{ article.title }} <small class="text-muted">{{ article.city }}</small></h1>
+            <h2>{{ article.role }}</h2>
+            <h5>
+                {{ article.date.strftime('%b %Y') }}
+                {% if article.modified %} - {{ article.modified.strftime('%b %Y') }}{% endif %}
+            </h5>
+        </div>
+    </div>
+</article>

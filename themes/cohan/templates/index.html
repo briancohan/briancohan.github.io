@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <div class="container">
+        <h1>Brian Cohan</h1>
+    </div>
+</div>
+
+<div class="container">
+
+    {% if EDUCATION %}
+    <h1>Education</h1>
+    <div class="row">
+        {% for school, degree, grad in EDUCATION %}
+        <div class="col-sm">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ degree }}</h5>
+                    <h6 class="card-subtitle">{{ school }}</h6>
+                    {{ grad }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+{% endblock content %}

@@ -1,4 +1,9 @@
-Title: University of Maryland - Dr. Mowrer
+Title: University of Maryland
 Date: 2009-09-01
+Modified: 2009-12-31
+Role: Teaching Assistant - Dr. Mowrer
+City: College Park, MD
+Image: umd.png
+Slug: mowrer
 
-Working for Mowrer
+Working at UMD

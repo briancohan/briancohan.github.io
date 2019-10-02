@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/united/bootstrap.min.css">
+    <style>
+        html, body{height: 100%}
+        .work img{width: 64px;}
+    </style>
 
     <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
 
@@ -12,7 +16,7 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
         <div class="container">
             <a class="navbar-brand" href="{{ SITEURL }}/">{{ SITENAME }}</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -32,7 +36,7 @@
 
                     {% if DISPLAY_PAGES_ON_MENU -%}
                     {% for pg in pages %}
-                    <li class="nav-item {% if pg== page %}active{% endif %}">
+                    <li class="nav-item {% if pg == page %}active{% endif %}">
                         <a class="nav-link" href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a>
                     </li>
                     {% endfor %}
@@ -41,7 +45,7 @@
 
                     {% if DISPLAY_CATEGORIES_ON_MENU -%}
                     {% for cat, null in categories %}
-                    <li class="nav-item {% if cat== category %}active{% endif %}">
+                    <li class="nav-item {% if cat == category %}active{% endif %}">
                         <a class="nav-link" href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
                     </li>
                     {% endfor %}
@@ -52,10 +56,8 @@
     </nav>
 </header>
 
-<div class="container">
-    {% block content %}
-    {% endblock %}
-</div>
+{% block content %}
+{% endblock %}
 
 {% if SOCIAL %}
 <div class="bg-secondary social">
