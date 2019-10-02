@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Brian Cohan'
 SITENAME = 'Brian Cohan'
 SITEURL = ''
+JUMBOTRON_IMAGE = 'jens-johnsson-qFYBki6u3Ik-unsplash.jpg'
 
 PATH = 'content'
 
@@ -32,7 +33,6 @@ EXTRA_PATH_METADATA = {
     'extra/README': {'path': 'README'},
 }
 
-# Blogroll
 LINKS = (
     ('Burnable Item Database', 'http://www.firebid.umd.edu/burning-item-database.php'),
     ('Rise Fire Database', 'http://www.sp.se/fire/fdb'),
@@ -42,7 +42,6 @@ LINKS = (
     ('CONTAM', 'https://www.nist.gov/services-resources/software/contam'),
 )
 
-# Social widget
 SOCIAL = (
     ('fab fa-linkedin-in', 'https://www.linkedin.com/in/briandcohan/'),
     ('fab fa-twitter', 'https://twitter.com/BrianDCohan'),
@@ -51,13 +50,18 @@ SOCIAL = (
     # ('fab fa-kaggle', 'https://www.kaggle.com/briancohan'),
 )
 
-# Education Listing
 EDUCATION = (
     ('University of Maryland - College Park', 'B.S. Fire Protection Engineering', 'Dec 2008'),
     ('University of Maryland - College Park', 'M.S. Fire Protection Engineering', 'Aug 2010'),
 )
 
-DEFAULT_PAGINATION = 10
+LICENSES = (
+    ('PE', 'VA - 0402055056'),
+)
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+MEMBERSHIPS = (
+    ('SFPE', 'National', 'PMSFPE', 2006),
+    ('SFPE', 'Central VA', 'Member at Large', 2016),
+)
+
+DEFAULT_PAGINATION = 10

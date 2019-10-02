@@ -3,14 +3,24 @@
 {% block content %}
 <div class="jumbotron">
     <div class="container">
-        <h1>Brian Cohan</h1>
+        <div class="row">
+            <div class="col-sm-2">
+                <img class="img-fluid mx-auto" src="{{ SITEURL }}/extra/apple-touch-icon.png" alt="logo"/>
+            </div>
+            <div class="col-sm-10">
+                <h1 class="font-weight-bolder align-middle">
+                    Brian Cohan <small>PE PMSFPE</small>
+                </h1>
+                <h3>Fire Protection Engineer</h3>
+            </div>
+        </div>
     </div>
 </div>
 
 <div class="container">
 
     {% if EDUCATION %}
-    <h1>Education</h1>
+    <h1 class="text-primary">Education</h1>
     <div class="row">
         {% for school, degree, grad in EDUCATION %}
         <div class="col-sm">
@@ -25,5 +35,6 @@
         {% endfor %}
     </div>
     {% endif %}
+
 </div>
 {% endblock content %}

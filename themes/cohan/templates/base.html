@@ -6,8 +6,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/united/bootstrap.min.css">
     <style>
-        html, body{height: 100%}
+        html, body {height: 100%;}
+        body {display: flex;flex-direction: column;}
+        .content {flex: 1 0 auto;}
+        .footer {flex-shrink: 0;}
         .work img{width: 64px;}
+        .jumbotron{
+            background: url("{{ SITEURL }}/extra/{{ JUMBOTRON_IMAGE }}") no-repeat center center;
+            background-size: cover;
+            background-blend-mode: lighten;
+        }
     </style>
 
     <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
@@ -16,7 +24,7 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="{{ SITEURL }}/">{{ SITENAME }}</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -56,16 +64,18 @@
     </nav>
 </header>
 
+<div class="content">
 {% block content %}
 {% endblock %}
+</div>
 
 {% if SOCIAL %}
-<div class="bg-secondary social">
-    <div class="container py-5 mt-3">
+<div class="bg-secondary social footer">
+    <div class="container py-3 mt-3">
         <div class="row">
             {% for icon, link in SOCIAL %}
             <div class="col-sm text-center">
-                <span style="font-size: 5em;">
+                <span style="font-size: 4em;">
                     <a class="text-primary" href="{{ link }}"><i class="{{ icon }}"></i></a>
                 </span>
             </div>
