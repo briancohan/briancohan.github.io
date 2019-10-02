@@ -8,9 +8,7 @@
             {{ article.summary }}
         </div>
         <div class="card-footer">
-            {% for tag in article.tags|sort %}
-            <a href="{{ SITEURL }}/{{ tag.url }}"><span class="badge badge-secondary">{{ tag }}</span></a>
-            {% endfor %}
+            {% include 'article_tags.html' %}
         </div>
     </div>
 </div>

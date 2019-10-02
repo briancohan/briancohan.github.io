@@ -1,0 +1,3 @@
+{% for tag in article.tags|sort %}
+<a href="{{ SITEURL }}/{{ tag.url }}"><span class="badge badge-secondary">{{ tag }}</span></a>
+{% endfor %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title|striptags }} | {{ SITENAME }}{% endblock %}
+
+{% block content %}
+<section id="content" class="container">
+    <article>
+        <header>
+            <img src="{{ SITEURL }}/extra/{{ article.img }}" alt="{{ article.title }}" class="img-fluid mb-3"/>
+            <h1 class="entry-title text-primary">{{ article.title }}</h1>
+            <p class="lead">
+                <span class="text-muted">City:</span> {{ article.city }}
+            </p>
+            <p class="lead">
+                <span class="text-muted">Client:</span> {{ article.client }}
+            </p>
+            {% include 'article_tags.html' %}
+            <p>{{ article.role }}</p>
+        </header>
+
+        <div class="entry-content">
+            {{ article.content }}
+        </div><!-- /.entry-content -->
+
+    </article>
+</section>
+{% endblock %}

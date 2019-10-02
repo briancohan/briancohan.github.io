@@ -1,21 +1,5 @@
-{% extends "base.html" %}
+{% extends "article_listing.html" %}
 
 {% block title %}{{ category }} | {{ SITENAME }}{% endblock %}
 
-{% block content %}
-<div class="container mt-5">
-    <h1>{{ category }}</h1>
-    <div class="row">
-        {% for article in articles_page.object_list %}
-        {% if category == 'projects' %}
-        {% include 'project.html' %}
-        {% elif category == 'work history' %}
-        {% include 'work.html' %}
-        {% endif %}
-        {% endfor %}
-    </div>
-    {% if articles_page.has_other_pages() %}
-    {% include 'pagination.html' %}
-    {% endif %}
-</div>
-{% endblock %}
+{% block pagetitile %}{{ category }}{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Tags | {{ SITENAME }}{% endblock %}
+
+{% block content %}
+
+<section id="content" class="container">
+    <h1>Tags</h1>
+    <ul class="list-group">
+        {% for tag, articles in tags|sort %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+            <span class="badge badge-primary badge-pill">{{ articles|count }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+
+{% endblock %}
