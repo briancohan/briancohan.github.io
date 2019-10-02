@@ -1,17 +1,17 @@
-<article class="work my-5 col-sm-12">
+<article class="work my-3 col-sm-12">
     <div class="media">
         <img src="{{ SITEURL }}/extra/{{ article.image }}" class="mr-3"
              alt="{{ article.title }}">
         <div class="media-body">
-            <h1 class="mt-0">
+            <h2 class="mt-0">
                 <a href="{{ article.url }}" target="_blank"">{{ article.title }}</a>
                 <small class="text-muted">{{ article.city }}</small>
-            </h1>
-            <h2>{{ article.role }}</h2>
-            <h5>
+            </h2>
+            <h3>{{ article.role }}</h3>
+            <h6>
                 {{ article.date.strftime('%b %Y') }} - {% if article.modified %}{{ article.modified.strftime('%b %Y')
-                }}{% else %}Now{% endif %}
-            </h5>
+                }}{% else %}Present{% endif %}
+            </h6>
         </div>
     </div>
 </article>

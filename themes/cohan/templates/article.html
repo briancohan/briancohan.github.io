@@ -3,10 +3,11 @@
 {% block title %}{{ article.title|striptags }} | {{ SITENAME }}{% endblock %}
 
 {% block content %}
-<section id="content" class="container">
+<section class="container">
     <article>
         <header>
-            <img src="{{ SITEURL }}/extra/{{ article.img }}" alt="{{ article.title }}" class="img-fluid mb-3"/>
+            <img src="{{ SITEURL }}/extra/{% if article.img %}{{ article.img }}{% else %}{{ DEFAULT_PROJECT_IMG }}{% endif %}"
+                 alt="{{ article.title }}" class="img-fluid mb-3"/>
             <h1 class="entry-title text-primary">{{ article.title }}</h1>
             <p class="lead">
                 <span class="text-muted">City:</span> {{ article.city }}
