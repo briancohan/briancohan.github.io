@@ -1,9 +1,10 @@
-Title: University of Mary Washington - Willard Hall
+Title: UMW - Willard Hall
 Date: 2018-03-07
-tags: 
+Role: Fire Protection Engineer
+Client: University of Mary Washington
+City: Fredericksburg, VA
+Tags: Fire Alarm, Sprinkler, University
+img: 
+Status: draft
 
-Willard Hall
-University of Mary Washington
-Fredericksburg, VA
 Fire Protection Engineer responsible for designing the fire alarm system upgrades for an existing dormitory. 
-Fire Protection Engineer

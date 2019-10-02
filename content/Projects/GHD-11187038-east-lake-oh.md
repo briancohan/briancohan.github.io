@@ -1,9 +1,9 @@
-Title: Four Points by Sheraton Cleveland-Eastlake
+Title: Four Points by Sheraton Cleveland-Eastlake - Starwood Survey
 Date: 2018-11-15
-tags: 
+Role: Fire Protection Engineer
+Client: Four Points by Sheraton Cleveland-Eastlake
+City: Eastlake, OH
+Tags: Life Safety Code
+img: 
 
-Fire Protection Engineer
-Starwood Survey - Four Points by Sheraton Cleveland-Eastlake
-Marriott
-Eastlake, OH
 Fire Protection Engineer responsible for performing a site survey for a hotel renovation project. The survey was performed per the Starwood requirements by Marriott.
