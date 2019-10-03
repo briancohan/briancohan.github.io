@@ -2,7 +2,7 @@ Title: Carvana Vending Machine Structural Steel Analysis
 Date: 2019-02-05
 Role: Fire Protection Engineer
 Client: Carvana
-City: Various
+City: 
 Tags: FDS, PBD, Sprinkler
 img: carvana_tower.jpg
 Featured: True

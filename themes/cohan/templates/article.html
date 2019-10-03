@@ -6,20 +6,19 @@
 <section class="container">
     <article>
         <header>
-            <img src="{{ SITEURL }}/images/projects/{% if article.img %}{{ article.img }}{% else %}{{ DEFAULT_PROJECT_IMG }}{% endif %}"
-                 alt="{{ article.title }}" class="img-fluid mb-3"/>
-            <h1 class="entry-title text-primary">{{ article.title }}</h1>
-            <p class="lead">
-                <span class="text-muted">City:</span> {{ article.city }}
-            </p>
+            <h1 class="entry-title text-primary mt-5">{{ article.title }}
+                {% if article.city %}<small><span class="text-muted">{{ article.city }}</span></small>{% endif %}
+            </h1>
             <p class="lead">
                 <span class="text-muted">Client:</span> {{ article.client }}
+                <span class="float-right">{% include 'article_tags.html' %}</span>
             </p>
-            {% include 'article_tags.html' %}
-            <p>{{ article.role }}</p>
+            <img src="{{ SITEURL }}/images/projects/{% if article.img %}{{ article.img }}{% else %}{{ DEFAULT_PROJECT_IMG }}{% endif %}"
+                 alt="{{ article.title }}" class="img-fluid mb-3"/>
         </header>
 
         <div class="entry-content">
+            <p class="lead">{{ article.role }}</p>
             {{ article.content }}
         </div><!-- /.entry-content -->
 
