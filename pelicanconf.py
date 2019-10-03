@@ -52,6 +52,7 @@ SOCIAL = (
     ('fab fa-twitter', 'https://twitter.com/BrianDCohan'),
     ('fab fa-stack-overflow', 'https://stackoverflow.com/users/3447515/brian-cohan'),
     ('fab fa-github', 'https://github.com/briancohan'),
+    ('fab fa-strava', 'https://www.strava.com/athletes/38661281')
     # ('fab fa-kaggle', 'https://www.kaggle.com/briancohan'),
 )
 
