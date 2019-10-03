@@ -2,54 +2,36 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+# Site Info
 AUTHOR = 'Brian Cohan'
 SITENAME = 'Brian Cohan'
 SITEURL = ''
-DEFAULT_PROJECT_IMG = 'paul-bulai-XOQJa4OC8P0-unsplash.jpg'
-NAVBAR_IMG = 'navbar.png'
-
-PATH = 'content'
-
 TIMEZONE = 'America/New_York'
+DEFAULT_LANG = 'en-us'
 
-DEFAULT_LANG = 'English'
-
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
+# Site Generation
+PATH = 'content'
+THEME = 'themes/cohan'
+DEFAULT_PAGINATION = 12
+DELETE_OUTPUT_DIRECTORY = True
 
 STATIC_PATHS = [
     'images',
     'extra',
 ]
 EXTRA_PATH_METADATA = {
-    'extra/custom.css': {'path': 'custom.css'},
-    'extra/robots.txt': {'path': 'robots.txt'},
-    'extra/favicon.ico': {'path': 'favicon.ico'},  # and this
-    'extra/CNAME': {'path': 'CNAME'},
-    'extra/LICENSE': {'path': 'LICENSE'},
-    'extra/README': {'path': 'README'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
 }
 
-LINKS = (
-    ('Burnable Item Database', 'http://www.firebid.umd.edu/burning-item-database.php'),
-    ('Rise Fire Database', 'http://www.sp.se/fire/fdb'),
-    ('FDS', 'https://pages.nist.gov/fds-smv/'),
-    ('CFAST', 'https://pages.nist.gov/cfast/'),
-    ('Pathfinder', 'https://www.thunderheadeng.com/pathfinder/'),
-    ('CONTAM', 'https://www.nist.gov/services-resources/software/contam'),
-)
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
-SOCIAL = (
-    ('fab fa-linkedin-in', 'https://www.linkedin.com/in/briandcohan/'),
-    ('fab fa-twitter', 'https://twitter.com/BrianDCohan'),
-    ('fab fa-stack-overflow', 'https://stackoverflow.com/users/3447515/brian-cohan'),
-    ('fab fa-github', 'https://github.com/briancohan'),
-    # ('fab fa-kaggle', 'https://www.kaggle.com/briancohan'),
-)
+# Content Variables
+DEFAULT_PROJECT_IMG = 'paul-bulai-XOQJa4OC8P0-unsplash.jpg'
+NAVBAR_IMG = 'navbar.png'
 
 EDUCATION = (
     ('University of Maryland - College Park', 'B.S. Fire Protection Engineering', 'Dec 2008'),
@@ -65,6 +47,19 @@ MEMBERSHIPS = (
     ('SFPE', 'Central Virginia', 'http://sfpecentralva.org/', 'Member at Large', 2016),
 )
 
-DEFAULT_PAGINATION = 12
-DELETE_OUTPUT_DIRECTORY = True
-THEME = 'themes/cohan'
+SOCIAL = (
+    ('fab fa-linkedin-in', 'https://www.linkedin.com/in/briandcohan/'),
+    ('fab fa-twitter', 'https://twitter.com/BrianDCohan'),
+    ('fab fa-stack-overflow', 'https://stackoverflow.com/users/3447515/brian-cohan'),
+    ('fab fa-github', 'https://github.com/briancohan'),
+    # ('fab fa-kaggle', 'https://www.kaggle.com/briancohan'),
+)
+
+LINKS = (
+    ('Burnable Item Database', 'http://www.firebid.umd.edu/burning-item-database.php'),
+    ('Rise Fire Database', 'http://www.sp.se/fire/fdb'),
+    ('FDS', 'https://pages.nist.gov/fds-smv/'),
+    ('CFAST', 'https://pages.nist.gov/cfast/'),
+    ('Pathfinder', 'https://www.thunderheadeng.com/pathfinder/'),
+    ('CONTAM', 'https://www.nist.gov/services-resources/software/contam'),
+)
