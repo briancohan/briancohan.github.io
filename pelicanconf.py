@@ -33,20 +33,6 @@ AUTHOR_FEED_RSS = None
 DEFAULT_PROJECT_IMG = 'paul-bulai-XOQJa4OC8P0-unsplash.jpg'
 NAVBAR_IMG = 'navbar.png'
 
-EDUCATION = (
-    ('University of Maryland - College Park', 'B.S. Fire Protection Engineering', 'Dec 2008'),
-    ('University of Maryland - College Park', 'M.S. Fire Protection Engineering', 'Aug 2010'),
-)
-
-LICENSES = (
-    ('Professional Engineer', 'VA - 0402055056', 'http://www.dpor.virginia.gov/LicenseLookup/'),
-)
-
-MEMBERSHIPS = (
-    ('SFPE', 'National', 'https://www.sfpe.org/', 'PMSFPE', 2006),
-    ('SFPE', 'Central Virginia', 'http://sfpecentralva.org/', 'Member at Large', 2016),
-)
-
 SOCIAL = (
     ('fab fa-linkedin-in', 'https://www.linkedin.com/in/briandcohan/'),
     ('fab fa-twitter', 'https://twitter.com/BrianDCohan'),
