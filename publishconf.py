@@ -7,7 +7,7 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 
-SITEURL = ''
+SITEURL = 'https://briancohan.github.io/'
 RELATIVE_URLS = False
 DELETE_OUTPUT_DIRECTORY = True
 GOOGLE_ANALYTICS = "UA-128507131-1"
