@@ -12,7 +12,7 @@
             <i class="far fa-filter text-primary"></i>
             {% for tag, articles in tags|sort_by_article_count %}
             <a href="{{ SITEURL }}/{{ tag.url }}" class="px-2">
-                {{ tag }}<span class="badge text-secondary">{{ articles|count }}</span>
+                {{ tag }}&nbsp<span class="text-secondary">{{ articles|count }}</span>
             </a>
             {% endfor %}
         </div>
