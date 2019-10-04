@@ -34,19 +34,19 @@
                     {% endfor %}
 
 
-                    {% if DISPLAY_PAGES_ON_MENU -%}
-                    {% for pg in pages %}
-                    <li class="nav-item {% if pg == page %}active{% endif %}">
-                        <a class="nav-link" href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a>
+                    {% if DISPLAY_CATEGORIES_ON_MENU -%}
+                    {% for cat, null in categories %}
+                    <li class="nav-item {% if cat == category %}active{% endif %}">
+                        <a class="nav-link" href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
                     </li>
                     {% endfor %}
                     {% endif %}
 
 
-                    {% if DISPLAY_CATEGORIES_ON_MENU -%}
-                    {% for cat, null in categories %}
-                    <li class="nav-item {% if cat == category %}active{% endif %}">
-                        <a class="nav-link" href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+                    {% if DISPLAY_PAGES_ON_MENU -%}
+                    {% for pg in pages %}
+                    <li class="nav-item {% if pg == page %}active{% endif %}">
+                        <a class="nav-link" href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a>
                     </li>
                     {% endfor %}
                     {% endif %}
