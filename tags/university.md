@@ -1,0 +1,1 @@
+The higher education market sector provides a wide variety of fire protection challenges. Each school will often have a variety of buildings for residential, business, mercantile, assembly, and other purposes.   

@@ -1,0 +1,1 @@
+The [General Services Administration](https://www.gsa.gov/) (GSA) manages and supports the essential functions of federal agencies. They provide office spaces to federal employees and have their own set of standards, [P100](https://www.gsa.gov/real-estate/design-construction/engineering-and-architecture/facilities-standards-p100-overview).

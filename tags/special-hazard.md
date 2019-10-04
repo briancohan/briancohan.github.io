@@ -1,0 +1,1 @@
+Special Hazards are locations where there is an increased risk of safety and structural damage. These hazards often have specific requirements that go beyond standard building codes.

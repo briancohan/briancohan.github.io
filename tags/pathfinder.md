@@ -1,0 +1,1 @@
+[Pathfinder](https://www.thunderheadeng.com/pathfinder/)  is an emergency egress simulator that includes an integrated user interface and animated 3D results. Pathfinder allows you to evaluate evacuation models more quickly and produce more realistic graphics than with other simulators.

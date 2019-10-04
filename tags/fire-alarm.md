@@ -1,0 +1,1 @@
+Fire Alarms are a vital part of fire protection. The alarm monitors various initiating devices, such as smoke detectors and water flow switches, and notifies occupants of an emergency.

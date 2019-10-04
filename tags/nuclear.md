@@ -1,0 +1,1 @@
+Ever since the [Browns Ferry Fire](https://en.wikipedia.org/wiki/Browns_Ferry_Nuclear_Plant#Unit_1_fire), the nuclear industry has had a keen interest in protecting against fire hazards. Nuclear plants utilize a variety of prescriptive and performance-based protection schemes to ensure safety to personnel and the public.

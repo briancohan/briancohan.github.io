@@ -1,0 +1,1 @@
+Building Codes define the requirements for constructing a building. Two of the most common codes are the [International Building Code](https://codes.iccsafe.org/search/?search=ibc) and [NFPA 101](https://www.nfpa.org/codes-and-standards/all-codes-and-standards/list-of-codes-and-standards/detail?code=101)

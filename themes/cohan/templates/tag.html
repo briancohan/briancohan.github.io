@@ -3,3 +3,5 @@
 {% block title %}{{ tag }} | {{ SITENAME }}{% endblock %}
 
 {% block pagetitile %}Tag: {{ tag }}{% endblock %}
+
+{% block autopage %}{{ tag.page.content }}{% endblock %}

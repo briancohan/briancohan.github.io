@@ -1,0 +1,1 @@
+The Fire Dynamics Tools (FDTs) is a set of spreadsheet tools for fire modeling calculations. The NRC produces the FDTs as part  of [NUREG-1805](https://www.nrc.gov/reading-rm/doc-collections/nuregs/staff/sr1805/).

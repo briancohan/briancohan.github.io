@@ -1,0 +1,1 @@
+[Fire Dynamics Simulator](https://pages.nist.gov/fds-smv/) (FDS) is a large-eddy simulation (LES) code for low-speed flows, with an emphasis on smoke and heat transport from fires.

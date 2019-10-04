@@ -1,0 +1,1 @@
+[CFAST](https://pages.nist.gov/cfast/) is a two-zone fire model capable of predicting the environment in a multi-compartment structure subjected to a fire. It calculates the time-evolving distribution of smoke and gaseous combustion products as well as the temperature throughout a building during a user-prescribed fire.

@@ -1,0 +1,1 @@
+Performance-Based Design is a process and approach for designing and assessing building fire safety with both prescriptive and performance-based code systems. Prescriptive codes can not cover every single configuration, so performance-based design provides tools to ensure a required level of safety can be maintained.
