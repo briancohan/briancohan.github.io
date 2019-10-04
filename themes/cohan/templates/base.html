@@ -67,7 +67,10 @@
         <div class="row">
             {% for icon, link in SOCIAL %}
             <div class="col text-center">
-                <span style="font-size: 4em;">
+                <span class="d-none d-sm-block" style="font-size: 4em;">
+                    <a class="text-primary" href="{{ link }}" target="_blank"><i class="{{ icon }}"></i></a>
+                </span>
+                <span class="d-block d-sm-none" style="font-size: 3em;">
                     <a class="text-primary" href="{{ link }}" target="_blank"><i class="{{ icon }}"></i></a>
                 </span>
             </div>
