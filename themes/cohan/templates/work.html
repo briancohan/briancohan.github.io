@@ -5,8 +5,9 @@
         <div class="media-body">
             <h2 class="mt-0">
                 <a href="{{ article.url }}" target="_blank"">{{ article.title }}</a>
-                <small class="text-muted">{{ article.city }}</small>
+                <small class="text-muted d-none d-md-inline">{{ article.city }}</small>
             </h2>
+            <h2 class="d-md-none"><small class="text-muted">{{ article.city }}</small></h2>
             <h3>{{ article.role }}</h3>
             <h6>
                 {{ article.date.strftime('%b %Y') }} - {% if article.modified %}{{ article.modified.strftime('%b %Y')

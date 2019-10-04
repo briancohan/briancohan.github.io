@@ -28,7 +28,7 @@ Title: About Me
 <p>I joined GHD to broaden my horizons. As for performance-based fire protection, I've picked up smoke control and egress modeling. I've also been able to develop my skills with fire alarm, sprinkler, and life safety code projects. I'm still trying to find a niche on the classical side, but I am actively learning as much as I can to be a better-rounded engineer.</p>
     </div>
     
-    <div class="col-md-4">
+    <div class="col-md-5 col-lg-4">
     <img class="img-fluid" src="/images/Brian_Cohan_cropped.jpg" alt="Brian Cohan" />
     
     <h1 class="text-primary mt-5">Licenses</h1>
