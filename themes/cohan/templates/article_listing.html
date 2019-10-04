@@ -5,6 +5,20 @@
 {% block content %}
 <div class="container mt-5">
     <h1>{% block pagetitile %}{% endblock %}</h1>
+    {% if category == 'projects' %}
+
+    <div class="card">
+        <div class="card-body">
+            <i class="far fa-filter text-primary"></i>
+            {% for tag, articles in tags|sort_by_article_count %}
+            <a href="{{ SITEURL }}/{{ tag.url }}" class="px-2">
+                {{ tag }}<span class="badge text-secondary">{{ articles|count }}</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    {% endif %}
     {% block autopage %}{% endblock %}
     <div class="row">
         {% for article in articles_page.object_list %}

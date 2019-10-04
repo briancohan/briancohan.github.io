@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from functools import partial
 
 # Site Info
 AUTHOR = 'Brian Cohan'
@@ -52,3 +53,9 @@ LINKS = (
     ('Pathfinder', 'https://www.thunderheadeng.com/pathfinder/'),
     ('CONTAM', 'https://www.nist.gov/services-resources/software/contam'),
 )
+
+JINJA_FILTERS = {
+    'sort_by_article_count': partial(
+        sorted,
+        key=lambda tags: len(tags[1]),
+        reverse=True)}
