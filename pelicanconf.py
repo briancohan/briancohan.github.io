@@ -22,6 +22,7 @@ STATIC_PATHS = [
 ]
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/CNAME': {'path': 'CNAME'},
 }
 PLUGIN_PATHS = ['plugins/pelican-plugins']
 PLUGINS = ['autopages']
