@@ -8,6 +8,7 @@
                 <small class="text-muted d-none d-md-inline">{{ article.city }}</small>
             </h2>
             <h2 class="d-md-none"><small class="text-muted">{{ article.city }}</small></h2>
+            {% if article.department %}<h5>{{ article.department }}</h5>{% endif %}
             <h3>{{ article.role }}</h3>
             <h6>
                 {{ article.date.strftime('%b %Y') }} - {% if article.modified %}{{ article.modified.strftime('%b %Y')
