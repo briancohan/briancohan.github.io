@@ -29,7 +29,7 @@ Title: About Me
     </div>
     
     <div class="col-md-5 col-lg-4">
-    <img class="img-fluid" src="/images/Brian_Cohan_cropped.jpg" alt="Brian Cohan" />
+    <img class="img-fluid rounded" src="/images/Brian_Cohan_cropped.jpg" alt="Brian Cohan" />
     
     <h1 class="text-primary mt-5">Licenses</h1>
     <div class="card mt-3">
