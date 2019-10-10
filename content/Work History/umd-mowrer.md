@@ -1,6 +1,7 @@
 Title: University of Maryland
 Date: 2009-09-01
 Modified: 2009-12-31
+Department: Department of Fire Protection Engineering
 Role: Teaching Assistant - Dr. Mowrer
 City: College Park, MD
 Image: umd.png
