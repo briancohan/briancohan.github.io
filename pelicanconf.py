@@ -19,6 +19,7 @@ DELETE_OUTPUT_DIRECTORY = True
 STATIC_PATHS = [
     'images',
     'extra',
+    'docs',
 ]
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
@@ -53,6 +54,10 @@ LINKS = (
     ('CFAST', 'https://pages.nist.gov/cfast/'),
     ('Pathfinder', 'https://www.thunderheadeng.com/pathfinder/'),
     ('CONTAM', 'https://www.nist.gov/services-resources/software/contam'),
+)
+
+MENUITEMS = (
+    ('Download CV', '/docs/Brian_Cohan_Resume.pdf'),
 )
 
 JINJA_FILTERS = {

@@ -31,6 +31,8 @@ Title: About Me
     <div class="col-md-5 col-lg-4">
     <img class="img-fluid rounded" src="/images/Brian_Cohan_cropped.jpg" alt="Brian Cohan" />
     
+    <a class="btn btn-primary btn-lg mt-5" href="/docs/Brian_Cohan_Resume.pdf">Download CV</a>
+    
     <h1 class="text-primary mt-5">Licenses</h1>
     <div class="card mt-3">
         <div class="card-body">
